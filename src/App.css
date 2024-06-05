@@ -22,6 +22,10 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  
+}
+.App-header h1{
+  animation: App-logo-spin 5s;
 }
 
 .App-link {

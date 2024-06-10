@@ -13,8 +13,9 @@ body {
 }
 
 .App-header {
-  background-color: #071749;
+  background-color: #d3fff0;
   background-attachment: fixed;
+  border-bottom: 8px double #071849;
   min-height: 5rem;
   display: flex;
   flex-direction: column;
@@ -24,8 +25,8 @@ body {
   font-size: calc(10px + 2vmin);
   font-weight: bold;
   font-variant: small-caps;
-  color: #fff3e3;
-  box-shadow: 0 10px 25px #1747d6;
+  color: #00a16b;
+  
 }
 
 .book-container {

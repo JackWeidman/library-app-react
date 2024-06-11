@@ -4,9 +4,11 @@ import AddBook from './AddBook';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">Weidman Family Library</header>
+      <header className="App-header">
+      <nav>Weidman Family Library <AddBook /></nav>
+        </header>
       <div className="App-background">
-        <AddBook />
+        
       <div className="book-container">
         <BookObject />
         <BookObject />

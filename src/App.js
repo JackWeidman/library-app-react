@@ -1,6 +1,6 @@
 import './App.css';
-import BookObject from './BookObject';
-import AddBook from './AddBook';
+import BookObjectList from './UI/BookObjectList.js';
+import AddBook from './UI/AddBook';
 function App() {
   return (
     <div className="App">
@@ -10,13 +10,7 @@ function App() {
       <div className="App-background">
         
       <div className="book-container">
-        <BookObject />
-        <BookObject />
-        <BookObject />
-        <BookObject />
-        <BookObject />
-        <BookObject />
-        
+        <BookObjectList />
       </div>
       </div>
     </div>

@@ -1,4 +1,4 @@
-import './AddBook.css';
+import './static/AddBook.css';
 import React, { useState } from 'react';
 
 const AddBook = () => {

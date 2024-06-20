@@ -5,7 +5,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-      <nav>Weidman Family Library <AddBook /></nav>
+      Weidman Family Library <AddBook />
         </header>
       <div className="App-background">
         

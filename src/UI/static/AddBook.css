@@ -1,3 +1,47 @@
-.add-book input{
+
+
+.add-book form input{
+    display: block; 
+    margin-top: 10px;        /* Ensure each input is on a new line */
+    margin-bottom: 10px;    /* Space between the inputs */
+    width: 100%;            /* Full width for better alignment */
+    padding: 10px;          /* Padding inside the inputs for better user experience */
+    box-sizing: border-box; 
     background-color: #d3fff0;
+    border-radius: 0.25rem;
 }
+
+
+.add-book form button {
+    background-color: #d3fff0;
+    padding: .5rem .75rem;
+    font-weight: inherit;
+    font-variant: inherit;
+    color: inherit;
+    border-radius: 5px;
+    border-color: #d3fff0;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+.plus-sign::before{
+    content: "\002B";
+    font-size: 24px;
+    display: inline-block;
+    width: 20px;
+    text-align: center;
+}
+.add-book button {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    background-color: #d3fff0;
+    padding: .5rem .75rem;
+    font-weight: inherit;
+    font-variant: inherit;
+    color: inherit;
+    border-radius: 5px;
+    border-color: #d3fff0;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+

@@ -1,4 +1,4 @@
-const book = [
+const books = [
   { id: 1, author: 'Test Author', title: 'Test Title', genre: 'Test Genre' },
   { id: 2, author: 'Test Author', title: 'Test Title', genre: 'Test Genre' },
   { id: 3, author: 'Test Author', title: 'Test Title', genre: 'Test Genre' },
@@ -13,4 +13,4 @@ const book = [
   { id: 12, author: 'Test Author', title: 'Test Title', genre: 'Test Genre' },
 ];
 
-export { book };
+export { books };

@@ -2,17 +2,31 @@ import './static/AddBook.css';
 import React, { useState } from 'react';
 
 const AddBook = () => {
-  const [isOpen, setIsOpen] = useState(false);
-  const [formData, setFormData] = useState({
+  const initialFormData = {
+    id: '',
     title: '',
     author: '',
     genre: '',
-  });
+  }
+  const [isOpen, setIsOpen] = useState(false);
+  const [formData, setFormData] = useState(initialFormData);
+
+  const handleChange = (event) => {
+    const { name, value } = event.target;
+    setFormData((prevState) => ({
+      ...prevState,
+      [name]: value,
+    }));
+  };
+
   const toggleOpen = () => {
     setIsOpen(!isOpen);
   };
-  const handleChange = (e) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    console.log(formData);
+    setFormData(initialFormData)
   };
 
   return (
@@ -22,11 +36,28 @@ const AddBook = () => {
       </button>
       {isOpen && (
         <div>
-          <form>
-            <input type="text" placeholder="Title"></input>
-            <input type="text" placeholder="Author"></input>
-            <input type="text" placeholder="Genre"></input>
-            <button type="submit">Add Book!</button>
+          <form onSubmit={handleSubmit}>
+            <input
+              name='title'
+              value={formData.title || ''}
+              onChange={handleChange}
+              placeholder="Title"
+            ></input>
+            <input
+              name='author'
+              value={formData.author || ''}
+              onChange={handleChange}
+              placeholder="Author"
+            ></input>
+            <input
+              name='genre'
+              value={formData.genre || ''}
+              onChange={handleChange}
+              placeholder="Genre"
+            ></input>
+            <button type="submit">
+              Add Book!
+            </button>
           </form>
         </div>
       )}

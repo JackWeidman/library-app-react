@@ -5,13 +5,11 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-      Weidman Family Library <AddBook />
-        </header>
+        Weidman Family Library 
+        <AddBook />
+      </header>
       <div className="App-background">
-        
-      <div className="book-container">
         <BookObjectList />
-      </div>
       </div>
     </div>
   );

@@ -7,7 +7,7 @@ const AddBook = () => {
     title: '',
     author: '',
     genre: '',
-  }
+  };
   const [isOpen, setIsOpen] = useState(false);
   const [formData, setFormData] = useState(initialFormData);
 
@@ -26,7 +26,7 @@ const AddBook = () => {
   const handleSubmit = (event) => {
     event.preventDefault();
     console.log(formData);
-    setFormData(initialFormData)
+    setFormData(initialFormData);
   };
 
   return (
@@ -38,26 +38,24 @@ const AddBook = () => {
         <div>
           <form onSubmit={handleSubmit}>
             <input
-              name='title'
+              name="title"
               value={formData.title || ''}
               onChange={handleChange}
               placeholder="Title"
             ></input>
             <input
-              name='author'
+              name="author"
               value={formData.author || ''}
               onChange={handleChange}
               placeholder="Author"
             ></input>
             <input
-              name='genre'
+              name="genre"
               value={formData.genre || ''}
               onChange={handleChange}
               placeholder="Genre"
             ></input>
-            <button type="submit">
-              Add Book!
-            </button>
+            <button type="submit">Add Book!</button>
           </form>
         </div>
       )}
